@@ -85,6 +85,13 @@ body {
     color: #ffffff;
 }
 
+.active {
+    background-color: #e082a8;
+    color: #000000;
+    border-radius: 15px;
+
+}
+
 /* carousel */
 
 .carousel-caption h3 {
