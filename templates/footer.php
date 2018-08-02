@@ -51,3 +51,12 @@
     <script src="js/scripts.js"></script>
   </body>
 </html>
+
+<?php
+  // Guarda todo el contenido a un archivo
+  $fp = fopen($archivoCache, 'w');
+  fwrite($fp, ob_get_contents());
+  fclose($fp);
+  // Envíar al navegador
+  ob_end_flush();
+?>
